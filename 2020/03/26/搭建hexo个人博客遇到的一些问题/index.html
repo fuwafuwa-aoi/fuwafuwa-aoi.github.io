@@ -20,15 +20,19 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Pisces","version":"7.7.2","exturl":false,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Aoi&#39;s Blog">
-<meta property="og:url" content="http://yoursite.com/archives/2020/03/index.html">
+  <meta name="description" content="在使用github+hexo next主题搭建个人博客时遇到的一些问题以及解决方案（保持更新）">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搭建hexo个人博客遇到的一些问题">
+<meta property="og:url" content="http://yoursite.com/2020/03/26/%E6%90%AD%E5%BB%BAhexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/index.html">
 <meta property="og:site_name" content="Aoi&#39;s Blog">
+<meta property="og:description" content="在使用github+hexo next主题搭建个人博客时遇到的一些问题以及解决方案（保持更新）">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2020-03-26T03:31:47.000Z">
+<meta property="article:modified_time" content="2020-03-26T04:12:41.365Z">
 <meta property="article:author" content="LiangQiong">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://yoursite.com/archives/2020/03/">
+<link rel="canonical" href="http://yoursite.com/2020/03/26/%E6%90%AD%E5%BB%BAhexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/">
 
 
 <script id="page-configurations">
@@ -36,12 +40,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>归档 | Aoi's Blog</title>
+  <title>搭建hexo个人博客遇到的一些问题 | Aoi's Blog</title>
   
 
 
@@ -155,96 +159,104 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post">
             
 
+  <div class="posts-expand">
+      
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 3 篇日志。 继续努力。</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/03/26/%E6%90%AD%E5%BB%BAhexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="LiangQiong">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Aoi's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          搭建hexo个人博客遇到的一些问题
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-03-26 11:31:47 / 修改时间：12:12:41" itemprop="dateCreated datePublished" datetime="2020-03-26T11:31:47+08:00">2020-03-26</time>
+            </span>
+
+          
+            <div class="post-description">在使用github+hexo next主题搭建个人博客时遇到的一些问题以及解决方案（保持更新）</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2020</span>
-    </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-03-26T11:31:47+08:00"
-              content="2020-03-26">
-          03-26
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/03/26/%E6%90%AD%E5%BB%BAhexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/" itemprop="url">
-            <span itemprop="name">搭建hexo个人博客遇到的一些问题</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-03-26T09:08:11+08:00"
-              content="2020-03-26">
-          03-26
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/03/26/%E4%BD%BF%E7%94%A8html-css%E5%88%9B%E5%BB%BA%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5/" itemprop="url">
-            <span itemprop="name">使用html+css创建静态网页</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2020-03-23T22:11:51+08:00"
-              content="2020-03-23">
-          03-23
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2020/03/23/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
+        <h3 id="安装hexo即执行npm-install时进度条停止"><a href="#安装hexo即执行npm-install时进度条停止" class="headerlink" title="安装hexo即执行npm install时进度条停止"></a>安装hexo即执行npm install时进度条停止</h3><p>部分的安装无响应以及下载缓慢是因为网速问题导致的，使用淘宝镜像cnpm可以解决这一问题，缺点是淘宝镜像的部分依赖包不完整。</p>
+<p>使用淘宝镜像仍然发现不能正常安装，经过尝试发现是hexo路径的问题。最初，我将hexo文件夹建立在C:\Program Files的目录之下，致使安装不能成功。将其安装在用户文件夹之下时，问题就解决了。</p>
+<h3 id="hexo-new-‘文章’-没有生成对应的-md文件"><a href="#hexo-new-‘文章’-没有生成对应的-md文件" class="headerlink" title="hexo new ‘文章’ 没有生成对应的.md文件"></a>hexo new ‘文章’ 没有生成对应的.md文件</h3><p>绝大多数的hexo命令需要先进入到…\hexo（自命名）\blog的文件夹中，而不是在hexo文件夹下直接操作</p>
+<p>报错信息：</p>
+<p><code>C:\Users\administrator\hexo&gt;hexo new &#39;新文章&#39;</code><br><code>Usage: hexo &lt;command&gt;</code></p>
+<p><code>Commands:</code><br>  <code>help     Get help on a command.</code><br>  <code>init     Create a new Hexo folder.</code><br>  <code>version  Display version information.</code></p>
+<p><code>Global Options:</code><br>  <code>--config  Specify config file instead of using _config.yml</code><br>  <code>--cwd     Specify the CWD</code><br>  <code>--debug   Display all verbose messages in the terminal</code><br>  <code>--draft   Display draft posts</code><br>  <code>--safe    Disable all plugins and scripts</code><br>  <code>--silent  Hide output on console</code></p>
+<p><code>For more help, you can use &#39;hexo help [command]&#39; for the detailed information</code><br><code>or you can check the docs: http://hexo.io/docs/</code></p>
+<p>输入命令 cd blog 操作进入到子文件夹就可以正常使用hexo new了</p>
+<h3 id="发布新博客后主页空白"><a href="#发布新博客后主页空白" class="headerlink" title="发布新博客后主页空白"></a>发布新博客后主页空白</h3><p>当我发布上一篇博客后，发现主页内容全部空白，以为是误删了_config.yml中的配置。尝试删除了这篇博客后，主页又可以正常显示了，那么问题就锁定在这篇博客。</p>
+<p>在网上搜索了一些解决办法，关于此类问题还是比较少的。其中的一个说法是hexo冒号后是必须要有空格的，我仔细检查后，发现问题不在这里。也可以采用将博客内容复制到能够正常运行的博客下面，测试是否能够正常运行的办法，如果不能，则说明是内容中有违法的输入。</p>
+<p>我将原博客中可能有问题的地方逐个粘贴的测试文档中，排查问题后终于找到了问题所在：hexo的md普通文本中是不能有如下这样的符号的，具体原因可能与html有关，尚不明晰。</p>
+<p><code>&lt;a&gt;</code></p>
+<h3 id="为博客添加评论区"><a href="#为博客添加评论区" class="headerlink" title="为博客添加评论区"></a>为博客添加评论区</h3><p>disqus比较适用于英文博客，而适用于中文博客的多说与网易云跟帖相继关闭，因此选择的来必力，评论管理功能比较便捷，next主题中也已经有相关的配置</p>
 
     </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2020/03/26/%E4%BD%BF%E7%94%A8html-css%E5%88%9B%E5%BB%BA%E9%9D%99%E6%80%81%E7%BD%91%E9%A1%B5/" rel="prev" title="使用html+css创建静态网页">
+      <i class="fa fa-chevron-left"></i> 使用html+css创建静态网页
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
   </div>
-  
-  
-  
-
-  
-
 
 
           </div>
           
+    
+  <div class="comments">
+    <div id="lv-container" data-id="city" data-uid="MTAyMC80OTMwNi8yNTc5OA=="></div>
+  </div>
+  
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -291,6 +303,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装hexo即执行npm-install时进度条停止"><span class="nav-number">1.</span> <span class="nav-text">安装hexo即执行npm install时进度条停止</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-new-‘文章’-没有生成对应的-md文件"><span class="nav-number">2.</span> <span class="nav-text">hexo new ‘文章’ 没有生成对应的.md文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#发布新博客后主页空白"><span class="nav-number">3.</span> <span class="nav-text">发布新博客后主页空白</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为博客添加评论区"><span class="nav-number">4.</span> <span class="nav-text">为博客添加评论区</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -395,6 +408,21 @@
 
   
 
+<script>
+NexT.utils.loadComments(document.querySelector('#lv-container'), () => {
+  window.livereOptions = {
+    refer: location.pathname.replace(CONFIG.root, '').replace('index.html', '')
+  };
+  (function(d, s) {
+    var j, e = d.getElementsByTagName(s)[0];
+    if (typeof LivereTower === 'function') { return; }
+    j = d.createElement(s);
+    j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+    j.async = true;
+    e.parentNode.insertBefore(j, e);
+  })(document, 'script');
+});
+</script>
 
 <script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/z16.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false,"pluginJsPath":"lib/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
