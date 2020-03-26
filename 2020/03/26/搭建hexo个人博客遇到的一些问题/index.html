@@ -27,10 +27,12 @@
 <meta property="og:site_name" content="Aoi&#39;s Blog">
 <meta property="og:description" content="在使用github+hexo next主题搭建个人博客时遇到的一些问题以及解决方案（保持更新）">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://yoursite.com/2020/03/26/%E6%90%AD%E5%BB%BAhexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/1.png">
 <meta property="article:published_time" content="2020-03-26T03:31:47.000Z">
-<meta property="article:modified_time" content="2020-03-26T04:12:41.365Z">
+<meta property="article:modified_time" content="2020-03-26T07:30:46.260Z">
 <meta property="article:author" content="LiangQiong">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://yoursite.com/2020/03/26/%E6%90%AD%E5%BB%BAhexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/1.png">
 
 <link rel="canonical" href="http://yoursite.com/2020/03/26/%E6%90%AD%E5%BB%BAhexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/">
 
@@ -191,7 +193,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-03-26 11:31:47 / 修改时间：12:12:41" itemprop="dateCreated datePublished" datetime="2020-03-26T11:31:47+08:00">2020-03-26</time>
+              <time title="创建时间：2020-03-26 11:31:47 / 修改时间：15:30:46" itemprop="dateCreated datePublished" datetime="2020-03-26T11:31:47+08:00">2020-03-26</time>
             </span>
 
           
@@ -208,7 +210,7 @@
       
         <h3 id="安装hexo即执行npm-install时进度条停止"><a href="#安装hexo即执行npm-install时进度条停止" class="headerlink" title="安装hexo即执行npm install时进度条停止"></a>安装hexo即执行npm install时进度条停止</h3><p>部分的安装无响应以及下载缓慢是因为网速问题导致的，使用淘宝镜像cnpm可以解决这一问题，缺点是淘宝镜像的部分依赖包不完整。</p>
 <p>使用淘宝镜像仍然发现不能正常安装，经过尝试发现是hexo路径的问题。最初，我将hexo文件夹建立在C:\Program Files的目录之下，致使安装不能成功。将其安装在用户文件夹之下时，问题就解决了。</p>
-<h3 id="hexo-new-‘文章’-没有生成对应的-md文件"><a href="#hexo-new-‘文章’-没有生成对应的-md文件" class="headerlink" title="hexo new ‘文章’ 没有生成对应的.md文件"></a>hexo new ‘文章’ 没有生成对应的.md文件</h3><p>绝大多数的hexo命令需要先进入到…\hexo（自命名）\blog的文件夹中，而不是在hexo文件夹下直接操作</p>
+<h3 id="hexo-new-‘文章’-没有生成对应的-md文件"><a href="#hexo-new-‘文章’-没有生成对应的-md文件" class="headerlink" title="hexo new ‘文章’ 没有生成对应的.md文件"></a>hexo new ‘文章’ 没有生成对应的.md文件</h3><p>绝大多数的hexo命令需要先进入到…\hexo（自命名）\blog的文件夹中，而不是在hexo文件夹下直接操作。以及站点根目录同样指的是blog而不是hexo，新手容易混淆这一点。</p>
 <p>报错信息：</p>
 <p><code>C:\Users\administrator\hexo&gt;hexo new &#39;新文章&#39;</code><br><code>Usage: hexo &lt;command&gt;</code></p>
 <p><code>Commands:</code><br>  <code>help     Get help on a command.</code><br>  <code>init     Create a new Hexo folder.</code><br>  <code>version  Display version information.</code></p>
@@ -219,7 +221,17 @@
 <p>在网上搜索了一些解决办法，关于此类问题还是比较少的。其中的一个说法是hexo冒号后是必须要有空格的，我仔细检查后，发现问题不在这里。也可以采用将博客内容复制到能够正常运行的博客下面，测试是否能够正常运行的办法，如果不能，则说明是内容中有违法的输入。</p>
 <p>我将原博客中可能有问题的地方逐个粘贴的测试文档中，排查问题后终于找到了问题所在：hexo的md普通文本中是不能有如下这样的符号的，具体原因可能与html有关，尚不明晰。</p>
 <p><code>&lt;a&gt;</code></p>
-<h3 id="为博客添加评论区"><a href="#为博客添加评论区" class="headerlink" title="为博客添加评论区"></a>为博客添加评论区</h3><p>disqus比较适用于英文博客，而适用于中文博客的多说与网易云跟帖相继关闭，因此选择的来必力，评论管理功能比较便捷，next主题中也已经有相关的配置</p>
+<h3 id="为博客添加评论区"><a href="#为博客添加评论区" class="headerlink" title="为博客添加评论区"></a>为博客添加评论区</h3><p>disqus比较适用于英文博客，而适用于中文博客的多说与网易云跟帖相继关闭，因此选择的来必力，评论管理功能比较便捷，next主题中也已经有相关的配置。缺点是来必力加载较慢，更好的评论系统还在进一步探索中。</p>
+<h3 id="hexo插入本地图片"><a href="#hexo插入本地图片" class="headerlink" title="hexo插入本地图片"></a>hexo插入本地图片</h3><h4 id="插件安装："><a href="#插件安装：" class="headerlink" title="插件安装："></a>插件安装：</h4><p>把主页配置文件_config.yml 里的post_asset_folder: 这个选项设置为true</p>
+<p>安装插件，在blog中执行如下命令</p>
+<p><code>npm install hexo-asset-image --save</code></p>
+<p>安装完成后，再hexo new 新文章 时就会生成一个同名的文件夹</p>
+<h4 id="方法一："><a href="#方法一：" class="headerlink" title="方法一："></a>方法一：</h4><p>将图片放在该文件夹中，用markdown的格式插入图片，hexo插入图片使用的是相对路径，所以直接用图片名即可，无需标注前面的/source/posts等。</p>
+<p><code>![](/01.png)</code></p>
+<p>注：我使用的markdown编辑器是Typora，它会自动提醒你选择路径，通过该方法选择之后代码将修改为完整的路径，这样的图片在博客预览中看不出问题但是在hexo中是不显示的。反之，以正确的格式手动输入图片路径，在Typora中是无法正常预览的，会出现下图的情况。所以，<strong>手动输入相对路径</strong>，比较安全。</p>
+<p><img src="/2020/03/26/%E6%90%AD%E5%BB%BAhexo%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E9%81%87%E5%88%B0%E7%9A%84%E4%B8%80%E4%BA%9B%E9%97%AE%E9%A2%98/1.png" alt></p>
+<h4 id="方法二："><a href="#方法二：" class="headerlink" title="方法二："></a>方法二：</h4><p>在source下创建images文件夹，将用到的图片保存在这个文件夹中，与直接在同名文件夹使用<strong>区别</strong>是需要标注/images，因为hexo中引用图片使用的是相对路径，images文件夹服务的是整个站点而不仅仅是这一篇博客。</p>
+<p><code>![](images/02.png)</code></p>
 
     </div>
 
@@ -303,7 +315,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装hexo即执行npm-install时进度条停止"><span class="nav-number">1.</span> <span class="nav-text">安装hexo即执行npm install时进度条停止</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-new-‘文章’-没有生成对应的-md文件"><span class="nav-number">2.</span> <span class="nav-text">hexo new ‘文章’ 没有生成对应的.md文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#发布新博客后主页空白"><span class="nav-number">3.</span> <span class="nav-text">发布新博客后主页空白</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为博客添加评论区"><span class="nav-number">4.</span> <span class="nav-text">为博客添加评论区</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装hexo即执行npm-install时进度条停止"><span class="nav-number">1.</span> <span class="nav-text">安装hexo即执行npm install时进度条停止</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo-new-‘文章’-没有生成对应的-md文件"><span class="nav-number">2.</span> <span class="nav-text">hexo new ‘文章’ 没有生成对应的.md文件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#发布新博客后主页空白"><span class="nav-number">3.</span> <span class="nav-text">发布新博客后主页空白</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#为博客添加评论区"><span class="nav-number">4.</span> <span class="nav-text">为博客添加评论区</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#hexo插入本地图片"><span class="nav-number">5.</span> <span class="nav-text">hexo插入本地图片</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#插件安装："><span class="nav-number">5.1.</span> <span class="nav-text">插件安装：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#方法一："><span class="nav-number">5.2.</span> <span class="nav-text">方法一：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#方法二："><span class="nav-number">5.3.</span> <span class="nav-text">方法二：</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
